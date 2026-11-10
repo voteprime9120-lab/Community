@@ -430,6 +430,7 @@ class DeckLauncher:
         self.f_time = (fam, 20, "bold")
 
         root.title("Deck Launcher")
+        self.set_window_icon(root)
         root.configure(bg=BG)
         root.geometry("1280x800")
         root.minsize(640, 520)
@@ -481,6 +482,17 @@ class DeckLauncher:
         }, self.is_active)
         self.tick_clock()
         self.body.focus_set()
+
+    @staticmethod
+    def set_window_icon(root):
+        base = getattr(sys, "_MEIPASS", APP_DIR)  # exe 안에 묶인 파일 위치
+        try:
+            if SYSTEM == "Windows" and os.path.exists(os.path.join(base, "assets", "icon.ico")):
+                root.iconbitmap(default=os.path.join(base, "assets", "icon.ico"))
+            elif os.path.exists(os.path.join(base, "assets", "icon.png")):
+                root.iconphoto(True, tk.PhotoImage(master=root, file=os.path.join(base, "assets", "icon.png")))
+        except Exception:
+            pass
 
     # ------------------------------------------------------------ 데이터 / 목록
     def categories(self):
