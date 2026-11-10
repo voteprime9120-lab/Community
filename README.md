@@ -8,6 +8,11 @@
 - 밝은 라이트 테마: 왼쪽 아이콘 레일, 메뉴 패널(전체 / 즐겨찾기 / 최근 실행 / 카테고리), 아날로그 시계 카드
 - 앱을 카테고리(폴더)로 묶고, 즐겨찾기로 표시할 수 있음
 
+## 바로 받기 (Windows exe)
+
+[**DeckLauncher.exe 다운로드**](https://github.com/voteprime9120-lab/Community/releases/download/launcher-latest/DeckLauncher.exe) - 파이썬 설치 없이 바로 실행됩니다.
+(`deck_launcher.py` 가 바뀌면 GitHub Actions 가 exe 를 자동으로 다시 만들어 [launcher-latest 릴리스](https://github.com/voteprime9120-lab/Community/releases/tag/launcher-latest)에 올립니다.)
+
 ## 실행 방법
 
 1. [Python 3](https://www.python.org/downloads/)을 설치합니다. (Windows는 설치할 때 *Add python.exe to PATH* 체크)
