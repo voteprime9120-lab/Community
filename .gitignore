@@ -1,0 +1,6 @@
+apps.json
+apps.json.tmp
+__pycache__/
+build/
+dist/
+*.spec
